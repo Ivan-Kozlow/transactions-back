@@ -1,24 +1,24 @@
 {
 	"version": 2,
 	"env": {
-		"PORT": "@PORT",
-		"HOST": "@HOST",
-		"JWT_SECRET": "@JWT_SECRET",
-		"DB_NAME": "@DB_NAME",
-		"DB_USERNAME": "@DB_USERNAME",
-		"DB_PASSWORD": "@DB_PASSWORD"
+		"PORT": 5432,
+		"HOST": "localhost",
+		"JWT_SECRET": "kfpe321WLclxc",
+		"DB_NAME": "nest_examp",
+		"DB_USERNAME": "postgres",
+		"DB_PASSWORD": "rootroot"
 	},
 	"builds": [
 		{
-			"src": "src/main.ts",
+			"src": "dist/main.js",
 			"use": "@vercel/node"
 		}
 	],
 	"routes": [
 		{
 			"src": "/(.*)",
-			"dest": "src/main.ts",
-			"methods": ["GET", "POST", "PUT", "DELETE"]
+			"dest": "dist/main.js",
+			"methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"]
 		}
 	]
 }
