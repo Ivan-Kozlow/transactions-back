@@ -1,9 +1,10 @@
 {
 	"version": 2,
 	"env": {
-		"PORT": 5432,
+		"PORT": 3000,
 		"HOST": "localhost",
 		"JWT_SECRET": "kfpe321WLclxc",
+		"DB_PORT": 5432,
 		"DB_NAME": "nest_examp",
 		"DB_USERNAME": "postgres",
 		"DB_PASSWORD": "rootroot"
